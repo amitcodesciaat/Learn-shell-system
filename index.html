@@ -1,153 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Learning Platform</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
 
-</head>
-<body>
-    <div class="header-section">
-        <img class="logo" src="images/logo.jpeg" alt="Logo">
-        
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Search..." onfocus="showOptions()" onblur="hideOptions()">
-            <div class="options" id="options">
-                <div class="option">Option 1</div>
-                <div class="option">Option 2</div>
-                <div class="option">Option 3</div>
-                <div class="option">Option 4</div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="img/logo.PNG" class="logo" alt="" />
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="search" />
+        <button class="search-btn"><img src="img/search.PNG" alt="" /></button>
+      </div>
+      <div class="user-options">
+        <img src="img/video.PNG" class="icon" alt="" />
+        <img src="img/grid.PNG" class="icon" alt="" />
+        <img src="img/bell.PNG" class="icon" alt="" />
+        <div class="user-dp">
+          <img src="img/profile-pic.png" alt="" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="side-bar">
+      <a href="#" class="links active"><img src="img/home.PNG" alt="" />home</a>
+      <a href="#" class="links"><img src="img/explore.PNG" alt="" />explore</a>
+      <a href="#" class="links"
+        ><img src="img/subscription.PNG" alt="" />subscription</a
+      >
+      <hr class="seperator" />
+      <a href="#" class="links"><img src="img/library.PNG" alt="" />library</a>
+      <a href="#" class="links"><img src="img/history.PNG" alt="" />history</a>
+      <a href="#" class="links"><img src="img/your-video.PNG" alt="" />your video</a>
+      <a href="#" class="links"><img src="img/watch-later.PNG" alt="" />watch leater</a>
+      <a href="#" class="links"><img src="img/liked video.PNG" alt="" />like video</a>
+      <a href="#" class="links"><img src="img/show more.PNG" alt="" />show more</a>
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+      <button class="filter-options active">all</button>
+      <button class="filter-options">Latest</button>
+      <button class="filter-options">web development</button>
+      <button class="filter-options">python</button>
+      <button class="filter-options">entertainment</button>
+      <button class="filter-options">marvel</button>
+      <button class="filter-options">javascript</button>
+      <button class="filter-options">artificial intelligence</button>
+      <button class="filter-options">machine learning</button>
+      <button class="filter-options">trending</button>
+    </div>
+
+    <!-- videos -->
+    <!-- <div class="video-container">
+        <div class="video">
+            <img src="img/profile-pic.png" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/profile-pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
             </div>
         </div>
-        
-        <select class="dropdown">
-            <option>My Courses</option>
-            <option>Bookmark</option>
-            <option>Settings</option>
-            <option>My Library</option>
-        </select>
-        
-        <div class="auth-links">
-            <h4>Login</h4>
-            <h4>SignUp for free</h4>
-        </div>
-    </div>
+    </div> -->
 
+            <div class="video-grid">
+                <div class="video-item">
+                    <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                    <img alt="DONALI (VIDEO) HARKIRAT SANGHA" height="400" src="https://storage.googleapis.com/a1aa/image/lclEDEvtg4oVCJfuXpwkXXXBK4ZM9fIxfBMescPFrHa4iUNQB.jpg" width="600"/>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views"> views • 5 hours ago<span id="viewCount">0</span></div>
+                        </div>
+                    </div>
+                </div>
 
+                <!--video second start-->
+                <div class="video-item">
+                    <div class="real-video" style="width: 600px; height: 200px;">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views"><span id="viewCount">0</span>views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                  <!--video second start-->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                  <!--video second start-->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                  <!--video second start-->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                  <!--video second start-->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                  <!--video second start-->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                <div class="video-item">
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
+                        <div>
+                            <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
+                            <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
+                            <div class="views">114K views • 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video second end -->
+                 <!-- video third start-->
+                 <div class="video-item">
 
-    <section>
-        
-<div class="sidebar">
-    <a href="#"><i class="fas fa-home"></i>
-    <span>Home</span>
-    </a>
-    <a href="#"><i class="fas fa-play"></i>
-    <span>Shorts</span>
-    </a>
-    <a href="#"><i class="fas fa-video"></i>
-        <span>Subscriptions</span>
-    </a>
-    <a href="#"><i class="fas fa-user"></i>
-    <span>You</span>
-    </a>
-    </div>
-    <div class="content">
-    <div class="filter-bar">
-    <button class="active">All</button>
-    <button>Music</button>
-    <button>Indian pop music</button>
-    <button>Mixes</button>
-    <button>Karan Aujla</button>
-    <button>T-Series</button>
-    <button>Albums</button>
-    <button>Live</button>
-    <button>Johny Lever</button>
-    <button>Rajpal Yadav</button>
-    <button>Drama</button>
-    </div>
-    <div class="video-grid">
-    <div class="video-item">
-    <img alt="Tokni Official Video" height="400" src="https://storage.googleapis.com/a1aa/image/bRHlMuxe3202daaRZYnrySM0mzsqd9Tc77S6kMfoXJ0zIVDUA.jpg" width="600"/>
-    <div class="video-info">
-    <img alt="Desi Rock" height="40" src="https://storage.googleapis.com/a1aa/image/sL3P49wAMcK2EZM4iqyPGR7YRkjCD7KK5ieZKZeXifzZRqGoA.jpg" width="40"/>
-    <div>
-    <div class="title">Tokni Official Video | @KhasaAalaChahar @kashikasisodiaofficial</div>
-    <div class="channel">Desi Rock<i class="fas fa-check-circle"></i></div>
-    <div class="views">114K views • 5 hours ago</div>
-    </div>
-    </div>
-    </div>
-    <div class="video-item">
-        <img alt="DONALI (VIDEO) HARKIRAT SANGHA" height="400" src="https://storage.googleapis.com/a1aa/image/lclEDEvtg4oVCJfuXpwkXXXBK4ZM9fIxfBMescPFrHa4iUNQB.jpg" width="600"/>
-    <div class="video-info">
-        <img alt="Sangha Hits" height="40" src="https://storage.googleapis.com/a1aa/image/GoeuYEVdwmRcPytPz6MgGhqmmvZLn2TDvvbUFZZL54UYkqBKA.jpg" width="40"/>
-    <div>
-    <div class="title">DONALI (VIDEO) HARKIRAT SANGHA | STARBOY X | RADIOACTIVE [EP] |...</div>
-    <div class="channel">Sangha Hits</div>
-    <div class="views">327K views • 7 days ago</div>
-    </div>
-    </div>
-    </div>
-    <div class="video-item">
-        <img alt="Vijay Raaz Comedy" height="400" src="https://storage.googleapis.com/a1aa/image/S8J4hE8G58LaG596e5ahCkk7bgKe6zSL9XdQIEiFs7O1IVDUA.jpg" width="600"/>
-    <div class="video-info">
-        <img alt="Feel Good Movies" height="40" src="https://storage.googleapis.com/a1aa/image/ISGJnwnvfbwcL6AZihEKXrbfeSRD3mMdP4Kef6nrUbWKGpagC.jpg" width="40"/>
-    <div>
-    <div class="title">क्या टाइम आ गया है भिखारियों के साथ सोना पड़ रहा है - Vijay Raaz Comedy | Run Movie |...</div>
-    <div class="channel">Feel Good Movies</div>
-    <div class="views">25M views • 3 months ago</div>
-    </div>
-    </div>
-    </div>
-    <div class="video-item">
-            <img alt="DONALI (VIDEO) HARKIRAT SANGHA" height="400" src="https://storage.googleapis.com/a1aa/image/lclEDEvtg4oVCJfuXpwkXXXBK4ZM9fIxfBMescPFrHa4iUNQB.jpg" width="600"/>
-        <div class="video-info">
-            <img alt="Sangha Hits" height="40" src="https://storage.googleapis.com/a1aa/image/GoeuYEVdwmRcPytPz6MgGhqmmvZLn2TDvvbUFZZL54UYkqBKA.jpg" width="40"/>
-        <div>
-        <div class="title">DONALI (VIDEO) HARKIRAT SANGHA | STARBOY X | RADIOACTIVE [EP] |...</div>
-        <div class="channel">Sangha Hits</div>
-        <div class="views">327K views • 7 days ago</div>
-        </div>
-        </div>
-        </div>
-        <div class="video-item">
-                <img alt="DONALI (VIDEO) HARKIRAT SANGHA" height="400" src="https://storage.googleapis.com/a1aa/image/lclEDEvtg4oVCJfuXpwkXXXBK4ZM9fIxfBMescPFrHa4iUNQB.jpg" width="600"/>
-            <div class="video-info">
-                <img alt="Sangha Hits" height="40" src="https://storage.googleapis.com/a1aa/image/GoeuYEVdwmRcPytPz6MgGhqmmvZLn2TDvvbUFZZL54UYkqBKA.jpg" width="40"/>
-            <div>
-            <div class="title"> DONALI (VIDEO) HARKIRAT SANGHA | STARBOY X | RADIOACTIVE [EP] |...</div>
-            <div class="channel"> Sangha Hits </div>
-            <div class="views">327K views • 7 days ago</div>
+                    <iframe width="600" height="200" src="https://www.youtube.com/embed/ly36kn0ug4k" title="HTML &amp; CSS - How to Embed a YouTube Video in Your Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                    <img alt="Sangha Hits" height="40" src="https://storage.googleapis.com/a1aa/image/GoeuYEVdwmRcPytPz6MgGhqmmvZLn2TDvvbUFZZL54UYkqBKA.jpg" width="40"/>
+                        <div>
+                            <div class="title">DONALI (VIDEO) HARKIRAT SANGHA | STARBOY X | RADIOACTIVE [EP] |...</div>
+                            <div class="channel">Sangha Hits</div>
+                             <div class="views">327K views • 7 days ago</div>
+                         </div>
+                     </div>
+                </div>
+                 <!-- video thirf end-->
             </div>
-            </div>
-            </div>
-    <div class="video-item">
-        <img alt="Vijay Raaz Comedy" height="400" src="https://storage.googleapis.com/a1aa/image/S8J4hE8G58LaG596e5ahCkk7bgKe6zSL9XdQIEiFs7O1IVDUA.jpg" width="600"/>
-        <div class="video-info">
-            <img alt="Feel Good Movies" height="40" src="https://storage.googleapis.com/a1aa/image/ISGJnwnvfbwcL6AZihEKXrbfeSRD3mMdP4Kef6nrUbWKGpagC.jpg" width="40"/>
-            <div>
-            <div class="title">क्या टाइम आ गया है भिखारियों के साथ सोना पड़ रहा है - Vijay Raaz Comedy | Run Movie |...</div>
-            <div class="channel">Feel Good Movies</div>
-            <div class="views">25M views • 3 months ago</div>
-            </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    
-    </section>
-    <script>
-        function showOptions() {
-            document.getElementById('options').style.display = 'block';
-        }
 
-        function hideOptions() {
-            document.getElementById('options').style.display = 'none';
-        }
-    </script>
-</body>
+   <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+    <script src="script.js"></script>
+  </body>
 </html>
