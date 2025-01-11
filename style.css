@@ -118,8 +118,8 @@ body{
     position: fixed;
     top: 60px;
     left: 0;
-    min-width: 250px;
-    width: 250px;
+    min-width: 180px;
+    width: 180px;
     height: calc(100vh - 60px);
     background: #fff;
     padding-right: 10px;
@@ -158,9 +158,9 @@ body{
 
 .filters{
     position: fixed;
-    left: 260px;
+    left: 181px;
     top: 60px;
-    width: calc(100% - 250px);
+    width: calc(100% - 155px);
     height: 60px;
     background: #fff;
     border-top: 1px solid #dbdbdb;
@@ -253,7 +253,7 @@ body{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 130px;
+    /* margin-top: 130px; */
     margin-left: 195px;
 }
 .video-item {
@@ -298,6 +298,25 @@ body{
 @media (max-width: 768px) {
     .video-item {
         width: calc(50% - 20px);
+    }
+    .video-grid{
+        margin: 0px;
+        padding: 20px;
+    }
+    .side-bar{
+        display: none;
+    }
+    .filters{
+        left: 0px;
+        top:100px;
+        width: calc(100% - 0px);
+    }
+    .navbar{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .user-options{
+        margin-left: 0px;
     }
 }
 @media (max-width: 480px) {
