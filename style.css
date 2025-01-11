@@ -118,8 +118,8 @@ body{
     position: fixed;
     top: 60px;
     left: 0;
-    min-width: 180px;
-    width: 180px;
+    min-width: 250px;
+    width: 250px;
     height: calc(100vh - 60px);
     background: #fff;
     padding-right: 10px;
@@ -158,9 +158,9 @@ body{
 
 .filters{
     position: fixed;
-    left: 181px;
+    left: 260px;
     top: 60px;
-    width: calc(100% - 155px);
+    width: calc(100% - 250px);
     height: 60px;
     background: #fff;
     border-top: 1px solid #dbdbdb;
